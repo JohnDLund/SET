@@ -14,17 +14,7 @@ namespace SetGame.Controllers
         List<Card> playerCards = new List<Card>();
 
 
-        static void validateSet()
-        {
-            if (symbolMatch() == true && shapeMatch() == true && shadeMatch() == true && numberMatch() == true)
-            {
-                return true;
-            };
-
-        }
-
-
-        static void symbolMatch()
+        public bool symbolMatch()
         {
 
             if (
@@ -34,17 +24,21 @@ namespace SetGame.Controllers
             }
         };
 
-        static void shapeMatch()
+        public void shapeMatch()
         {
 
             if (
             (playerCards.firstCard.Shape == playerCards.secondCard.Shape && playerCards.firstCard.Shape == playerCards.thirdCard.Shape)
-                     {
+            {
                 return true;
+            }
+            else
+            {
+                return false
             }
         };
 
-        static void shadeMatch()
+        public void shadeMatch()
         {
 
             if (
@@ -52,9 +46,13 @@ namespace SetGame.Controllers
                      {
                 return true;
             }
+            else
+            {
+                return false
+            }
         };
 
-        static void numberMatch()
+        public void numberMatch()
         {
 
             if (
@@ -62,6 +60,25 @@ namespace SetGame.Controllers
                      {
                 return true;
             }
+            else
+            {
+                return false
+            }
         };
+
+
+        public void validateSet()
+        {
+            if (symbolMatch() == true || shapeMatch() == true || shadeMatch() == true || numberMatch() == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false
+            }
+
+        }
+
 
     }
