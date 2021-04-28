@@ -14,7 +14,7 @@ namespace SetGame.Controllers
         List<Card> playerCards = new List<Card>();
 
 
-        public void validateSet()
+        static void validateSet()
         {
             if (symbolMatch() == true && shapeMatch() == true && shadeMatch() == true && numberMatch() == true)
             {
@@ -24,7 +24,7 @@ namespace SetGame.Controllers
         }
 
 
-        public void symbolMatch()
+        static void symbolMatch()
         {
 
             if (
@@ -34,7 +34,7 @@ namespace SetGame.Controllers
             }
         };
 
-        public void shapeMatch()
+        static void shapeMatch()
         {
 
             if (
@@ -44,7 +44,7 @@ namespace SetGame.Controllers
             }
         };
 
-        public void shadeMatch()
+        static void shadeMatch()
         {
 
             if (
@@ -54,7 +54,7 @@ namespace SetGame.Controllers
             }
         };
 
-        public void numberMatch()
+        static void numberMatch()
         {
 
             if (
