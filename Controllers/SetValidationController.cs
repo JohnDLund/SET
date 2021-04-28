@@ -19,47 +19,47 @@ namespace SetGame.Controllers
             if (symbolMatch() == true && shapeMatch() == true && shadeMatch() == true && numberMatch() == true)
             {
                 return true;
-            }
+            };
 
+
+            public void symbolMatch()
             {
-                public void symbolMatch()
-                {
 
-                    if (
-                    (playerCards.firstCard.Symbol == playerCards.secondCard.Symbol && playerCards.firstCard.Symbol == playerCards.thirdCard.Symbol)
+                if (
+                (playerCards.firstCard.Symbol == playerCards.secondCard.Symbol && playerCards.firstCard.Symbol == playerCards.thirdCard.Symbol)
                      {
-                        return true;
-                    }
-                };
+                    return true;
+                }
+            };
 
-                public void shapeMatch()
-                {
+            public void shapeMatch()
+            {
 
-                    if (
-                    (playerCards.firstCard.Shape == playerCards.secondCard.Shape && playerCards.firstCard.Shape == playerCards.thirdCard.Shape)
+                if (
+                (playerCards.firstCard.Shape == playerCards.secondCard.Shape && playerCards.firstCard.Shape == playerCards.thirdCard.Shape)
                      {
-                        return true;
-                    }
-                };
+                    return true;
+                }
+            };
 
-                public void shadeMatch()
-                {
+            public void shadeMatch()
+            {
 
-                    if (
-                    (playerCards.firstCard.Shade == playerCards.secondCard.Shade && playerCards.firstCard.Shade == playerCards.thirdCard.Shade)
+                if (
+                (playerCards.firstCard.Shade == playerCards.secondCard.Shade && playerCards.firstCard.Shade == playerCards.thirdCard.Shade)
                      {
-                        return true;
-                    }
-                };
+                    return true;
+                }
+            };
 
-                public void numberMatch()
-                {
+            public void numberMatch()
+            {
 
-                    if (
-                    (playerCards.firstCard.Number == playerCards.secondCard.Number && playerCards.firstCard.Number == playerCards.thirdCard.Number)
+                if (
+                (playerCards.firstCard.Number == playerCards.secondCard.Number && playerCards.firstCard.Number == playerCards.thirdCard.Number)
                      {
-                        return true;
-                    }
-                };
+                    return true;
+                }
+            };
 
-            }
+        }
