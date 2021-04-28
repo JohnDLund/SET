@@ -16,7 +16,7 @@ namespace SetGame.Controllers
 
         public void validateSet()
         {
-            if (symbolMatch == true && shapeMatch() == true && shadeMatch() == true && numberMatch() == true)
+            if (symbolMatch() == true && shapeMatch() == true && shadeMatch() == true && numberMatch() == true)
             {
                 return true;
             }
